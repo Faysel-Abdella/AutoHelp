@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeader from "../components/SectionHeader";
 import Statistics from "../components/Statistics";
+import CTAButton from "../components/CTAButton";
 
 const WhyUs = () => {
   return (
@@ -75,6 +76,14 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <p className="mt-24 text-center font-lora font-bold text-[40px] leading-[56px] text-foreground">
+        Get expert help today—book your <br /> FREE consultation!
+      </p>
+
+      <div className="mt-12 flex items-center justify-center">
+        <CTAButton label="Talk to an Advisor Now." />
       </div>
     </section>
   );
