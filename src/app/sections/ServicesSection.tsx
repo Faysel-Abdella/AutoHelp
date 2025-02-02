@@ -10,7 +10,7 @@ const ServicesSection = () => {
         <SectionHeader title="Services" />
       </div>
 
-      <h2 className="mt-6 text-foreground font-lora text-6xl text-center leading-[64px] font-bold">
+      <h2 className="mt-10 text-foreground font-lora text-6xl text-center leading-[64px] font-bold">
         We&rsquo;ve Been in Your Shoes—And <br /> We Know the Way Forward
       </h2>
 

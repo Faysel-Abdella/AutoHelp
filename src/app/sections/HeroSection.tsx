@@ -1,4 +1,5 @@
 import CTAButton from "../components/CTAButton";
+import SmallNote from "../components/SmallNote";
 
 const HeroSection = () => {
   return (
@@ -27,6 +28,12 @@ const HeroSection = () => {
 
         <div className="flex items-center justify-center mt-8">
           <CTAButton label="Contact With Us!" />
+        </div>
+
+        <div className="mt-24 flex items-center justify-center gap-24">
+          <SmallNote text="We Make It Simple." key={1} />
+          <SmallNote text="We Make It Affordable." key={2} />
+          <SmallNote text="We Make It Stress-Free." key={3} />
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ import ServicesSection from "./sections/ServicesSection";
 export default function Home() {
   return (
     <React.Fragment>
-      <section className="relative h-screen">
+      <section className="relative min-h-screen pb-10">
         <figure className="-z-10 absolute top-0 left-0 w-full h-full">
           <Image
             src={"/backgrounds/hero.svg"}
