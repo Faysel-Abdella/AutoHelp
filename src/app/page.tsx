@@ -3,6 +3,8 @@ import React from "react";
 
 import Navbar from "./components/Navbar";
 import HeroSection from "./sections/HeroSection";
+import ServicesSection from "./sections/ServicesSection";
+
 export default function Home() {
   return (
     <React.Fragment>
@@ -24,6 +26,8 @@ export default function Home() {
 
         <HeroSection />
       </section>
+
+      <ServicesSection />
 
       <footer></footer>
     </React.Fragment>
