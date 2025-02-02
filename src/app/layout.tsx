@@ -3,12 +3,12 @@ import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 
 const loraSans = Lora({
-  variable: "--font-lora-sans",
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
 const interSans = Inter({
-  variable: "--font-inter-sans",
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -43,7 +43,6 @@ export const metadata: Metadata = {
     siteName: "AutoHelpUSA",
   },
 };
-
 
 export default function RootLayout({
   children,

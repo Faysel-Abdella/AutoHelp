@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lora: ["var(--font-lora)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         secondaryBackground: "var(--secondary-background)",
@@ -31,6 +35,7 @@ export default {
       },
       borderRadius: {
         large: "var(--radius-large)",
+        larger: "var(--radius-larger)",
       },
     },
   },

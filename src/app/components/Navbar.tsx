@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 import navMenu from "@/app/data/nav";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDownRight } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="z-50 font-[family-name:var(--font-inter-sans)]">
+    <header className="z-50 font-inter">
       <nav className="pt-6 flex items-center justify-center">
         <ul className="flex items-center w-fit bg-background border-[0.5px] border-main drop-shadow-main rounded-large py-2 px-2">
           {navMenu.map(({ label, sectionId }, index) => (
@@ -24,7 +24,7 @@ const Navbar = () => {
               <span className="font-medium py-2">Get Started</span>
 
               <div className="bg-background rounded-full scale-125">
-                <ArrowUpRight strokeWidth={1.5} className="text-foreground" />
+                <ArrowDownRight strokeWidth={1.5} className="text-foreground" />
               </div>
             </button>
           </li>
