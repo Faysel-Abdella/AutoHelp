@@ -26,9 +26,11 @@ export default {
       },
       dropShadow: {
         main: "var(--primary-drop-shadow)",
+        card: "var(--card-drop-shadow)",
       },
       borderColor: {
         main: "var(--main-border)",
+        card: "var(--main-card)",
       },
       borderWidth: {
         light: "var(--border-light)",
