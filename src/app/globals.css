@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --secondary-background: #f3f1f4;
+  --foreground: #222222;
+  --primary-blue: #513dff;
+  --primary-gray: #c8c8c8;
+  --lavender-light: #cfc9ff;
+  --lavender-lighter: #e2dfff;
+  --primary-drop-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
+  --main-border: rgba(206, 206, 206, 0.5);
+  --main-gradient: linear-gradient(to bottom, #222222, #c8c8c8);
+
+  --radius-large: 33px;
+
+  --border-light: 0.5px;
+}
