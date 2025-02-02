@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
+import HowItWorks from "./sections/HowItWorks";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       </section>
 
       <ServicesSection />
+      <HowItWorks />
 
       <footer></footer>
     </React.Fragment>
