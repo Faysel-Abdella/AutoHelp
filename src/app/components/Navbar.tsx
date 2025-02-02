@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 import navMenu from "@/app/data/nav";
 import { ArrowDownRight } from "lucide-react";

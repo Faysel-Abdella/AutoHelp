@@ -1,5 +1,4 @@
 import { ArrowDownRight } from "lucide-react";
-import React from "react";
 
 interface CTAButtonProps {
   label: string;

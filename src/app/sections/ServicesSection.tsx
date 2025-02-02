@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeader from "../components/SectionHeader";
 import Image from "next/image";
 import SmallService from "../components/SmallService";
@@ -21,7 +20,7 @@ const ServicesSection = () => {
       </p>
 
       <div className="mt-12 flex items-center justify-center gap-6">
-        <div className="bg-white h-[450px] w-[318px] p-8 bg-[url(/backgrounds/service-car.png)] border-2 border-card drop-shadow-card rounded-large flex items-end ">
+        <div className="bg-white h-[450px] w-[318px] p-8 bg-[url(/backgrounds/service-car.webp)] border-2 border-card drop-shadow-card rounded-large flex items-end ">
           <div>
             <Image
               src={"/icons/search-normal.svg"}
@@ -31,12 +30,12 @@ const ServicesSection = () => {
               loading="lazy"
             />
 
-            <h4 className="mt-7 font-lora font-bold text-xl leading-6 text-foreground">
+            <p className="mt-7 font-lora font-bold text-xl leading-6 text-foreground">
               Find Reliable Cars at Fair Prices –{" "}
               <span className="font-normal">
                 No overpaying, no hidden issues.
               </span>
-            </h4>
+            </p>
           </div>
         </div>
 
@@ -57,7 +56,7 @@ const ServicesSection = () => {
           />
         </div>
 
-        <div className="bg-white h-[450px] w-[318px] p-8 bg-[url(/backgrounds/peace.png)] border-2 border-card drop-shadow-card rounded-large flex items-start ">
+        <div className="bg-white h-[450px] w-[318px] p-8 bg-[url(/backgrounds/peace.webp)] border-2 border-card drop-shadow-card rounded-large flex items-start ">
           <div>
             <Image
               src={"/icons/process.svg"}
@@ -67,12 +66,12 @@ const ServicesSection = () => {
               loading="lazy"
             />
 
-            <h4 className="mt-7 font-lora font-bold text-xl leading-6 text-foreground">
+            <p className="mt-7 font-lora font-bold text-xl leading-6 text-foreground">
               Navigate the Process with Confidence –{" "}
               <span className="font-normal">
                 From paper-work to negotiation, we make it easy.
               </span>
-            </h4>
+            </p>
           </div>
         </div>
       </div>

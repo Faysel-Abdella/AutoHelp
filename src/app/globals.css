@@ -13,6 +13,7 @@
   --primary-drop-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
   --secondary-drop-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   --card-drop-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --step-drop-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
 
   --main-border: rgba(206, 206, 206, 0.5);
   --main-card: #c7c7c7;
