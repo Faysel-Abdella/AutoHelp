@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionHeader from "../components/SectionHeader";
+import Statistics from "../components/Statistics";
 
 const WhyUs = () => {
   return (
@@ -30,7 +31,50 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div></div>
+        <div
+          className=" relative bg-[url(/backgrounds/bg-dots.svg)] bg-center bg-cover bg-no-repeat
+        border border-secondary rounded-large drop-shadow-statistics py-11 px-10
+        "
+        >
+          <div className="absolute top-0 left-0 h-full w-full bg-black/80 rounded-large" />
+
+          <div className="relative z-10">
+            <Image
+              src={"/icons/chart.svg"}
+              alt="Real successes"
+              width={56}
+              height={56}
+              loading="lazy"
+            />
+
+            <h2 className="mt-14 font-lora font-bold text-[32px] text-white leading-10">
+              Real Success <br /> for Newcomers Like You
+            </h2>
+
+            <div className="mt-10 grid grid-cols-2 gap-6">
+              <Statistics
+                title="3,000+"
+                description="Newcomers helped buy their first U.S. car"
+                key={1}
+              />
+              <Statistics
+                title="$4,200+"
+                description="Average savings per client"
+                key={2}
+              />
+              <Statistics
+                title="92%"
+                description="limited U.S credit history)"
+                key={3}
+              />
+              <Statistics
+                title="15+"
+                description="Languages spoken for clear, personalized guidance"
+                key={4}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
