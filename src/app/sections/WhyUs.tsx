@@ -13,17 +13,17 @@ const WhyUs = () => {
       </h2>
 
       <div className="mt-20 flex items-center justify-center gap-8">
-        <div className="w-96 bg-secondaryBackground border-light border-card drop-shadow-card py-10 px-9 text-foreground">
+        <div className="w-96 py-10 px-9 rounded-large bg-secondaryBackground border-light border-card drop-shadow-card  text-foreground">
           <Image
             src={"/icons/language.svg"}
             alt="AutoHelpUS speaks your language"
             width={54}
             height={54}
           />
-          <h2 className="font-lora font-bold text-[32px] leading-10">
+          <h2 className="mt-60 font-lora font-bold text-[32px] leading-10">
             We Speak Your Language
           </h2>
-          <p className="font-inter font-medium text-lg leading-8">
+          <p className="mt-6 font-inter font-medium text-lg leading-8">
             Car buying is complicated enough—language barriers shouldn&rsquo;t
             make it harder. Our multilingual team offers support in various
             languages as needed.

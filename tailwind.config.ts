@@ -28,10 +28,13 @@ export default {
         main: "var(--primary-drop-shadow)",
         secondary: "var(--secondary-drop-shadow)",
         card: "var(--card-drop-shadow)",
+        statistics: "var(--statistics-drop-shadow)",
+        dataCard: "var(--data-card-drop-shadow)",
         step: "var(--step-drop-shadow)",
       },
       borderColor: {
         main: "var(--main-border)",
+        secondary: "var(--secondary-border)",
         card: "var(--main-card)",
       },
       borderWidth: {
