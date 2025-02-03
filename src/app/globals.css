@@ -6,7 +6,6 @@
   --foreground: #222222;
   --background: #ffffff;
   --secondary-background: #f3f1f4;
-  --foreground: #222222;
   --primary-blue: #513dff;
   --primary-gray: #c8c8c8;
   --lavender-light: #cfc9ff;
@@ -32,4 +31,17 @@
   --radius-larger: 44px;
 
   --border-light: 0.5px;
+}
+
+@layer utilities {
+  .border-gradient {
+    border-image: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ffffff 50%,
+      #ffffff 25%,
+      #ffffff 0%
+    );
+    border-image-slice: 1;
+  }
 }

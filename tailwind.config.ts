@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,11 +34,13 @@ export default {
         dataCard: "var(--data-card-drop-shadow)",
         step: "var(--step-drop-shadow)",
         bonus: "var(--bonus-drop-shadow)",
+        testimonial: "var(--testimonial-drop-shadow:)",
       },
       borderColor: {
         main: "var(--main-border)",
         secondary: "var(--secondary-border)",
         card: "var(--main-card)",
+        testimonial: "var(--testimonial-border)",
       },
       borderWidth: {
         light: "var(--border-light)",
@@ -48,5 +51,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
