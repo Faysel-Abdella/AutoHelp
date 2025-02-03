@@ -1,5 +1,5 @@
-import CTAButton from "../components/CTAButton";
-import SmallNote from "../components/SmallNote";
+import CTAButton from "@/components/CTAButton";
+import SmallNote from "@/components/SmallNote";
 
 const HeroSection = () => {
   return (

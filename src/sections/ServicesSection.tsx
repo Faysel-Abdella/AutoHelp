@@ -1,6 +1,6 @@
-import SectionHeader from "../components/SectionHeader";
+import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
-import SmallService from "../components/SmallService";
+import SmallService from "@/components/SmallService";
 
 const ServicesSection = () => {
   return (

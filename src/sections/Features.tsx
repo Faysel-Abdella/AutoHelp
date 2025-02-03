@@ -1,6 +1,6 @@
 import { MoveRight } from "lucide-react";
-import SectionHeader from "../components/SectionHeader";
-import Bonus from "../components/Bonus";
+import SectionHeader from "@/components/SectionHeader";
+import Bonus from "@/components/Bonus";
 
 const Features = () => {
   return (

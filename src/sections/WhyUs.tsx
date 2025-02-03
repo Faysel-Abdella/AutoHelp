@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SectionHeader from "../components/SectionHeader";
-import Statistics from "../components/Statistics";
-import CTAButton from "../components/CTAButton";
+import SectionHeader from "@/components/SectionHeader";
+import Statistics from "@/components/Statistics";
+import CTAButton from "@/components/CTAButton";
 
 const WhyUs = () => {
   return (

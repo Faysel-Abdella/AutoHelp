@@ -6,9 +6,9 @@
 //   CarouselItem,
 //   CarouselNext,
 //   CarouselPrevious,
-// } from "@/components/ui/carousel";
+// } from "@/components/components/ui/carousel";
 
-import SectionHeader from "../components/SectionHeader";
+import SectionHeader from "@/components/SectionHeader";
 
 const Testimonials = () => {
   return (

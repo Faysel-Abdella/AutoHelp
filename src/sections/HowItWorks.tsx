@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SectionHeader from "../components/SectionHeader";
-import Step from "../components/Step";
+import SectionHeader from "@/components/SectionHeader";
+import Step from "@/components/Step";
 
 const HowItWorks = () => {
   return (
