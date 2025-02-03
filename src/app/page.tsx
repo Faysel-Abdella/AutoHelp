@@ -10,6 +10,7 @@ import Features from "@/sections/Features";
 import Testimonials from "@/sections/Testimonials";
 import CarPreview from "@/sections/CarPreview";
 import ContactUs from "@/sections/ContactUs";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
       <CarPreview />
       <ContactUs />
 
-      <footer></footer>
+      <Footer />
     </React.Fragment>
   );
 }

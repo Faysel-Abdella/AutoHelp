@@ -23,6 +23,7 @@ export default {
         lavenderLight: "var(--lavender-light)",
         lavenderLighter: "var(--lavender-lighter)",
         input: "var(--input)",
+        footer: "var(--footer-ground)",
       },
       backgroundImage: {
         mainGradient: "var(--main-gradient)",

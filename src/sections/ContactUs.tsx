@@ -15,7 +15,7 @@ const ContactUs = () => {
           </p>
           <p className="mt-4 font-medium text-xl text-foreground text-center">
             {" "}
-            who saved <span className="font-bold">$2,800</span> on average!
+            who saved <span className="font-bold">$4,200</span> on average!
           </p>
         </div>
 
