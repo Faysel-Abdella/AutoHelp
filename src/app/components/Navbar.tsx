@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import navMenu from "@/data/nav";
+import navMenu from "@/app/data/nav";
 import { ArrowDownRight } from "lucide-react";
 
 const Navbar = () => {
