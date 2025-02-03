@@ -8,6 +8,7 @@ import HowItWorks from "@/sections/HowItWorks";
 import WhyUs from "@/sections/WhyUs";
 import Features from "@/sections/Features";
 import Testimonials from "@/sections/Testimonials";
+import CarPreview from "@/sections/CarPreview";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <Testimonials />
+      <CarPreview />
 
       <footer></footer>
     </React.Fragment>
