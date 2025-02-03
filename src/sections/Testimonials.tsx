@@ -1,12 +1,12 @@
 "use client";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
 
 import SectionHeader from "../components/SectionHeader";
 
@@ -24,7 +24,7 @@ const Testimonials = () => {
             Hear From Other Newcomers <br /> Like You
           </h2>
         </div>
-
+        {/* 
         <article className={"relative mt-24 max-md:mt-20 max-sm:mt-8 px-7"}>
           <Carousel
             opts={{
@@ -33,7 +33,7 @@ const Testimonials = () => {
             }}
             className={" w-full mx-auto max-w-[1200px]"}
           >
-            {/* <CarouselContent>
+            <CarouselContent>
               {dummyTestimonials.map((testimonial, index) => (
                 <CarouselItem
                   key={index}
@@ -49,7 +49,7 @@ const Testimonials = () => {
                   </div>
                 </CarouselItem>
               ))}
-            </CarouselContent> */}
+            </CarouselContent>
 
             <CarouselNext
               className={
@@ -62,7 +62,7 @@ const Testimonials = () => {
               }
             />
           </Carousel>
-        </article>
+        </article> */}
       </div>
     </section>
   );
