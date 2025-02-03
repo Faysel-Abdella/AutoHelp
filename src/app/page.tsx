@@ -6,6 +6,7 @@ import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
 import HowItWorks from "./sections/HowItWorks";
 import WhyUs from "./sections/WhyUs";
+import Features from "./sections/Features";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <ServicesSection />
       <WhyUs />
       <HowItWorks />
+      <Features />
 
       <footer></footer>
     </React.Fragment>
