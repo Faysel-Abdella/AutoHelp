@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-import Navbar from "./components/Navbar";
-import HeroSection from "./sections/HeroSection";
-import ServicesSection from "./sections/ServicesSection";
-import HowItWorks from "./sections/HowItWorks";
-import WhyUs from "./sections/WhyUs";
-import Features from "./sections/Features";
-import Testimonials from "./sections/Testimonials";
+import Navbar from "../components/Navbar";
+import HeroSection from "../sections/HeroSection";
+import ServicesSection from "../sections/ServicesSection";
+import HowItWorks from "../sections/HowItWorks";
+import WhyUs from "../sections/WhyUs";
+import Features from "../sections/Features";
+import Testimonials from "../sections/Testimonials";
 
 export default function Home() {
   return (
