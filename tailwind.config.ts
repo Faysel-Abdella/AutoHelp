@@ -22,6 +22,7 @@ export default {
         mainGray: "var(--primary-gray)",
         lavenderLight: "var(--lavender-light)",
         lavenderLighter: "var(--lavender-lighter)",
+        input: "var(--input)",
       },
       backgroundImage: {
         mainGradient: "var(--main-gradient)",

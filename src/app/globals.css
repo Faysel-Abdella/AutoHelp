@@ -10,6 +10,8 @@
   --primary-gray: #c8c8c8;
   --lavender-light: #cfc9ff;
   --lavender-lighter: #e2dfff;
+  --input: #dedde7;
+
   --primary-drop-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
   --secondary-drop-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   --statistics-drop-shadow: 0 10px 36px -8 rgba(0, 0, 0, 0.15);
