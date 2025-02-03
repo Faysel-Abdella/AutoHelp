@@ -14,7 +14,7 @@ const Testimonial = ({
   text,
 }: TestimonialProps) => {
   return (
-    <section className="h-52 border border-testimonial drop-shadow-testimonial p-5 rounded-3xl bg-[#403535]">
+    <section className="h-52 border border-testimonial drop-shadow-testimonial p-5 rounded-3xl bg-[#403535] select-none">
       <div className="flex justify-center">
         <div className="rounded-t-larger bg-gradient-to-b from-black to-transparent  ">
           <Image

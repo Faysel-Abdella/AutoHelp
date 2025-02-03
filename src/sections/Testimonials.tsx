@@ -12,10 +12,11 @@ import SectionHeader from "@/components/SectionHeader";
 
 import testimonials from "@/data/testimonials";
 import Testimonial from "@/components/Testimonial";
+import CTAButton from "@/components/CTAButton";
 
 const Testimonials = () => {
   return (
-    <section className="py-3 pt-20 bg-foreground">
+    <section className="py-3 pb-14 pt-20 bg-foreground">
       <div className="flex items-center justify-center">
         <SectionHeader title="Testimonials" />
       </div>
@@ -34,7 +35,9 @@ const Testimonials = () => {
             <Carousel
               opts={{
                 align: "start",
-                loop: true,
+                // loop: true,
+
+                dragFree: true,
               }}
               className={" w-full mx-auto max-w-[1200px]"}
             >
@@ -69,6 +72,15 @@ const Testimonials = () => {
               />
             </Carousel>
           </article>
+
+          <h2 className="mt-14 font-lora font-bold text-[40px] text-center text-background">
+            You deserve a stress-free car buying experience too. <br />{" "}
+            Let&rsquo;s make it happen!
+          </h2>
+
+          <div className="mt-10 flex items-center justify-center">
+            <CTAButton label="Book Your Free Call Now" />
+          </div>
         </div>
       </div>
     </section>
