@@ -31,6 +31,7 @@ export default {
         statistics: "var(--statistics-drop-shadow)",
         dataCard: "var(--data-card-drop-shadow)",
         step: "var(--step-drop-shadow)",
+        bonus: "var(--bonus-drop-shadow)",
       },
       borderColor: {
         main: "var(--main-border)",

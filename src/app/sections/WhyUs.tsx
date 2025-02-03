@@ -15,7 +15,7 @@ const WhyUs = () => {
       </h2>
 
       <div className="mt-20 flex items-center justify-center gap-8">
-        <div className="w-96 py-10 px-9 rounded-large bg-secondaryBackground border-light border-card drop-shadow-card  text-foreground">
+        <div className="   w-96 py-10 px-9 rounded-large bg-secondaryBackground border-light border-card drop-shadow-card  text-foreground">
           <Image
             src={"/icons/language.svg"}
             alt="AutoHelpUS speaks your language"
@@ -33,11 +33,11 @@ const WhyUs = () => {
         </div>
 
         <div
-          className=" relative bg-[url(/backgrounds/bg-dots.svg)] bg-center bg-cover bg-no-repeat
+          className=" relative bg-foreground
         border border-secondary rounded-large drop-shadow-statistics py-11 px-10
         "
         >
-          <div className="absolute top-0 left-0 h-full w-full bg-black/80 rounded-large" />
+          <div className="absolute top-0 left-0 h-full w-full bg-[url(/backgrounds/bg-dots.webp)] bg-center bg-no-repeat bg-cover  rounded-large" />
 
           <div className="relative z-10">
             <Image
@@ -65,7 +65,7 @@ const WhyUs = () => {
               />
               <Statistics
                 title="92%"
-                description="limited U.S credit history)"
+                description="Loan approval rate(even with limited U.S credit history)"
                 key={3}
               />
               <Statistics
