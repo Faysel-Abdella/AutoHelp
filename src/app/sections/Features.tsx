@@ -5,8 +5,7 @@ import Bonus from "../components/Bonus";
 const Features = () => {
   return (
     <section
-      className="relative bg-foreground
-        border border-secondary drop-shadow-statistics py-28 px-10
+      className="relative bg-foreground py-28 px-10
         "
     >
       <div className=" absolute top-0 left-0 h-full w-full bg-[url(/backgrounds/bg-dashed.webp)] bg-center bg-no-repeat bg-cover" />
