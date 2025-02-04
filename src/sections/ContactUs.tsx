@@ -1,12 +1,19 @@
 import { Send } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import Image from "next/image";
 import USstates from "@/data/us-states";
 
 const ContactUs = () => {
   return (
     <section className="relative py-32 bg-secondaryBackground flex items-center justify-center">
-      <main className="relative z-40 flex flex-wrap items-start justify-center gap-10 bg-white rounded-large p-10">
-        <section className="bg-blueGr p-8 py-20 max-sm:py-10 max-sm:px-8">
+      <main className="relative z-40 flex flex-wrap items-start justify-center gap-10 bg-white rounded-large py-20 px-10">
+        <section className="bg-blueGr p-8 py-10 max-sm:py-5 max-sm:px-8">
           <h1 className="font-lora font-bold text-4xl text-center leading-[52px] text-foreground">
             Claim Your Free Guide & <br /> Consultation
           </h1>
@@ -22,7 +29,7 @@ const ContactUs = () => {
           </div>
         </section>
 
-        <section className="flex  flex-col gap-6">
+        <form className="flex  flex-col gap-6">
           <div className="flex max-md:flex-col justify-center items-center gap-12 max-[890px]:gap-[24px]">
             <input
               placeholder="First Name*"
@@ -52,42 +59,49 @@ const ContactUs = () => {
               placeholder="Preferred language (optional)"
               className="placeholder:font-inter rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg placeholder:text-base"
             />
-            <select
-              className="rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg"
-              required
-            >
-              <option disabled selected>
-                Choose a state*
-              </option>
-              {USstates.map(({ id, label, value }) => (
-                <option key={id} value={value}>
-                  {label}
-                </option>
-              ))}
-            </select>
+            <Select>
+              <SelectTrigger
+                className={
+                  "rounded-md py-7 px-6 outline-none bg-input max-md:w-full text-lg focus:outline-none "
+                }
+              >
+                <SelectValue
+                  placeholder={"State*"}
+                  className="placeholder:font-inter"
+                />
+              </SelectTrigger>
+              <SelectContent className={"bg-white "}>
+                <SelectItem
+                  disabled
+                  value="default"
+                  className={"cursor-pointer"}
+                >
+                  Select your state*
+                </SelectItem>
+                {USstates.map(({ id, label, value }) => (
+                  <SelectItem
+                    key={id}
+                    value={value}
+                    className={"cursor-pointer text-lg"}
+                  >
+                    {label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
-          <div className="flex justify-center">
-            <button className="bg-primaryBlue text-primaryWhite rounded-none py-4 px-[67px] font-roboto font-bold text-[24px] leading-[28px] text-center max-md:w-full">
-              Send
+          <div className="flex justify-center mt-6">
+            <button
+              type="submit"
+              className="flex items-center justify-center gap-3 font-semibold text-lg py-4 px-24 bg-mainBlue rounded-large text-background"
+            >
+              <p>Send</p> <Send />
             </button>
           </div>
-        </section>
+        </form>
       </main>
 
       {/* <div>
-        <h1 className="font-lora font-bold text-5xl text-center leading-[64px] text-foreground">
-          Claim Your Free Guide & <br /> Consultation
-        </h1>
-
-        <div className="font-inter mt-12">
-          <p className="font-bold text-2xl text-foreground text-center">
-            Join 1000+ Newcomers
-          </p>
-          <p className="mt-4 font-medium text-xl text-foreground text-center">
-            {" "}
-            who saved <span className="font-bold">$4,200</span> on average!
-          </p>
-        </div>
 
         <form className="mt-12 font-inter flex items-start justify-center gap-8">
           <div className="flex flex-col gap-6">
