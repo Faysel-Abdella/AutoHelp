@@ -18,7 +18,7 @@ const CarPreview = () => {
       </p>
 
       <div className="mt-14 flex items-center justify-center">
-        <CTAButton label="Contact With US!" />
+        <CTAButton label="Contact Us" />
       </div>
     </section>
   );

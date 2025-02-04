@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MoveRight } from "lucide-react";
 
 import bonuses from "../data/bonuses";
+import CTAButton from "./CTAButton";
 
 const Bonus = () => {
   return (
@@ -29,10 +30,10 @@ const Bonus = () => {
         ))}
       </ul>
       <div className="mt-10 flex items-center  gap-1 cursor-pointer hover:scale-105 transition-all ease-in">
-        <p className="font-inter font-medium text-lg leading-8 text-white underline underline-offset-2">
-          Book Your Free Consultation
-        </p>
-        <MoveRight className="text-white" />
+        <CTAButton
+          label="Book Your Free Consultation"
+          icon={<MoveRight className="text-foreground  p-px" />}
+        />
       </div>
     </section>
   );

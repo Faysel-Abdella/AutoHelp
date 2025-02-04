@@ -1,6 +1,7 @@
 import { MoveRight } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import Bonus from "@/components/Bonus";
+import CTAButton from "@/components/CTAButton";
 
 const Features = () => {
   return (
@@ -26,10 +27,7 @@ const Features = () => {
           </p>
 
           <div className="mt-11 flex items-center gap-1 cursor-pointer hover:scale-105 transition-all ease-out">
-            <p className="font-inter font-medium text-lg leading-8 text-white underline underline-offset-2">
-              Start Your Journey Today
-            </p>
-            <MoveRight className="text-white" />
+            <CTAButton label="Start Your Journey Today" />
           </div>
         </aside>
 

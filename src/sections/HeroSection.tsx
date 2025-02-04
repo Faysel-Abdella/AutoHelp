@@ -27,7 +27,7 @@ const HeroSection = () => {
         </h3>
 
         <div className="flex items-center justify-center mt-8">
-          <CTAButton label="Contact With Us!" />
+          <CTAButton label="Contact Us" />
         </div>
 
         <div className="mt-24 flex items-center justify-center gap-24">
