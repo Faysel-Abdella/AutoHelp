@@ -1,4 +1,3 @@
-import { MoveRight } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import Bonus from "@/components/Bonus";
 import CTAButton from "@/components/CTAButton";

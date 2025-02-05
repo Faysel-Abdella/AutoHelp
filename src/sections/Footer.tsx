@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Footer = () => {
   return (
     <footer className="pt-7 pb-16 w-full  bg-secondaryBackground flex items-center justify-center">
