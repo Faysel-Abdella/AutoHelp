@@ -26,7 +26,7 @@ const Testimonials = () => {
 
         <div className="relative z-10">
           <div>
-            <h2 className="mt-10 text-white font-lora text-6xl max-xl:text-5xl text-center leading-[64px] font-bold">
+            <h2 className="mt-10 text-white font-lora text-6xl max-xl:text-5xl max-md:text-4xl text-center leading-[64px] font-bold">
               Hear From Other Newcomers <br /> Like You
             </h2>
           </div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
             </Carousel>
           </article>
 
-          <h2 className="mt-14 font-lora font-bold text-[40px] max-lg:text-4xl text-center text-background">
+          <h2 className="mt-14 font-lora font-bold text-[40px] max-lg:text-4xl max-md:text-3xl text-center text-background">
             You deserve a stress-free car buying experience too. <br />{" "}
             <span className="max-lg:block max-lg:mt-6">
               Let&rsquo;s make it happen!

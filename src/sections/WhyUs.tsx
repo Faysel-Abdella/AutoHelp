@@ -10,7 +10,7 @@ const WhyUs = () => {
         <SectionHeader title="Why Us?" />
       </div>
 
-      <h2 className="mt-10 text-foreground font-lora text-6xl max-xl:text-5xl text-center leading-[64px] font-bold">
+      <h2 className="mt-10 text-foreground font-lora text-6xl max-xl:text-5xl max-md:text-4xl text-center leading-[64px] font-bold">
         Why Newcomers Trust Us
       </h2>
 
@@ -22,7 +22,7 @@ const WhyUs = () => {
             width={54}
             height={54}
           />
-          <h2 className="mt-60 max-lg:mt-28 font-lora font-bold text-[32px] leading-10">
+          <h2 className="mt-60 max-lg:mt-28 max-md:mt-16 font-lora font-bold text-[32px] leading-10">
             We Speak Your Language
           </h2>
           <p className="mt-6 font-inter font-medium text-lg leading-8">
@@ -52,7 +52,7 @@ const WhyUs = () => {
               Real Success <br /> for Newcomers Like You
             </h2>
 
-            <div className="mt-10 grid grid-cols-2 gap-6">
+            <div className="mt-10 grid grid-cols-2 max-md:grid-cols-1 gap-6 ">
               <Statistics
                 title="3,000+"
                 description="Newcomers helped buy their first U.S. car"
@@ -78,7 +78,7 @@ const WhyUs = () => {
         </div>
       </div>
 
-      <p className="mt-24 text-center font-lora font-bold text-[40px] leading-[56px] text-foreground">
+      <p className="mt-24 text-center font-lora font-bold text-[40px] max-md:text-2xl leading-[56px] text-foreground">
         Get expert help today—book your <br /> FREE consultation!
       </p>
 

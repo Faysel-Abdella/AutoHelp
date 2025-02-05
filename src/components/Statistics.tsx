@@ -7,7 +7,7 @@ interface StatisticsProps {
 
 const Statistics = ({ title, description }: StatisticsProps) => {
   return (
-    <div className="w-64 bg-[#362525]  border border-secondary drop-shadow-dataCard rounded-2xl p-5">
+    <div className="w-64 max-md:w-full bg-[#362525]  border border-secondary drop-shadow-dataCard rounded-2xl p-5">
       <h2 className="text-white font-lora font-bold text-[32px] leading-10">
         {title}
       </h2>

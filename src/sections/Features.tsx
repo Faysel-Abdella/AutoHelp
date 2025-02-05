@@ -5,7 +5,7 @@ import CTAButton from "@/components/CTAButton";
 const Features = () => {
   return (
     <section
-      className="relative bg-foreground drop-shadow-statistics py-28 px-10
+      className="relative bg-foreground drop-shadow-statistics py-28 px-10 max-md:px-5
         "
     >
       <div className=" absolute top-0 left-0 h-full w-full bg-[url(/backgrounds/bg-dashed.webp)] bg-center bg-no-repeat bg-cover" />
@@ -16,13 +16,14 @@ const Features = () => {
             <SectionHeader title="Features" />
           </div>
 
-          <h2 className="mt-6 text-white font-lora font-bold text-[40px] leading-[54px]">
+          <h2 className="mt-6 text-white font-lora font-bold text-[40px] max-md:text-3xl leading-[54px]">
             Newcomer Guarantee: <br /> No Savings? No Fee.
           </h2>
 
           <p className="mt-6 font-inter font-medium text-lg leading-8 text-white">
             If we can&rsquo;t get you a better deal than you&rsquo;d find on
-            your own, <br /> you don&rsquo;t pay us a cent.
+            your own, <br className="max-md:hidden" /> you don&rsquo;t pay us a
+            cent.
           </p>
 
           <div className="mt-11 flex items-center gap-1 cursor-pointer hover:scale-105 transition-all ease-out">

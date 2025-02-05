@@ -7,11 +7,11 @@ import CTAButton from "./CTAButton";
 
 const Bonus = () => {
   return (
-    <section className="p-10 max-lg:w-4/5 max-lg:mx-auto border border-mainBlue rounded-large drop-shadow-bonus bg-[#3e3333]">
+    <section className="p-10 max-lg:w-4/5 max-md:w-full max-lg:mx-auto border border-mainBlue rounded-large drop-shadow-bonus bg-[#3e3333]">
       <h2 className="text-white font-lora font-semibold text-2xl leading-8">
         🎁 BONUS:
       </h2>
-      <h2 className="mt-4 font-lora font-bold text-[32px] text-white leading-[48px]">
+      <h2 className="mt-4 font-lora font-bold text-2xl max-md:text-xl text-white leading-[48px]">
         Your Newcomer Advantage <br /> Package
       </h2>
       <ul className="mt-10 space-y-4">
@@ -33,6 +33,7 @@ const Bonus = () => {
         <CTAButton
           label="Book Your Free Consultation"
           icon={<MoveRight className="text-foreground  p-px" />}
+          style="text-sm"
         />
       </div>
     </section>

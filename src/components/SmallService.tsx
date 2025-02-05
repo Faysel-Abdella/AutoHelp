@@ -9,7 +9,7 @@ interface SmallServiceProps {
 
 const SmallService = ({ icon, alt, title, subTitle }: SmallServiceProps) => {
   return (
-    <div className="bg-white h-[213px] w-[318px] max-xl:w-[250px] p-8 max-xl:p-4  border-2 border-card drop-shadow-card rounded-large ">
+    <div className="bg-white h-[213px] max-md:h-[200px] w-[318px] max-xl:w-[250px] max-md:w-[85%] p-8 max-xl:p-4  border-2 border-card drop-shadow-card rounded-large ">
       <div>
         <Image src={icon} width={48} height={48} alt={alt} loading="lazy" />
 
