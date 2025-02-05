@@ -13,7 +13,7 @@ const ContactUs = () => {
   return (
     <section className="relative py-32 px-4 bg-secondaryBackground flex items-center justify-center">
       <main className="relative z-40 flex flex-wrap items-start justify-center gap-10 bg-white rounded-large py-20 px-10">
-        <section className="bg-blueGr p-8 py-10 max-sm:py-0 max-sm:px-8">
+        <section className="p-8 py-10 max-sm:py-0 max-sm:px-0">
           <h1 className="font-lora font-bold text-4xl max-md:text-2xl text-center leading-[52px] text-foreground">
             Claim Your Free Guide & <br className="max-md:hidden" />{" "}
             Consultation
@@ -23,7 +23,7 @@ const ContactUs = () => {
             <p className="font-bold text-2xl text-foreground text-center">
               Join 1000+ Newcomers
             </p>
-            <p className="mt-4 font-medium text-xl max-md:text-lg text text-foreground text-center max-md:text-nowrap">
+            <p className="mt-4 font-medium text-xl max-md:text-lg text text-foreground text-center ">
               {" "}
               who saved <span className="font-bold">$4,200</span> on average!
             </p>
