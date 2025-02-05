@@ -5,24 +5,24 @@ import CTAButton from "@/components/CTAButton";
 
 const WhyUs = () => {
   return (
-    <section className="py-20  bg-background">
+    <section className="py-20 px-4 bg-background">
       <div className="flex items-center justify-center">
         <SectionHeader title="Why Us?" />
       </div>
 
-      <h2 className="mt-10 text-foreground font-lora text-6xl text-center leading-[64px] font-bold">
+      <h2 className="mt-10 text-foreground font-lora text-6xl max-xl:text-5xl text-center leading-[64px] font-bold">
         Why Newcomers Trust Us
       </h2>
 
-      <div className="mt-20 flex items-center justify-center gap-8">
-        <div className="   w-96 py-10 px-9 rounded-large bg-secondaryBackground border-light border-card drop-shadow-card  text-foreground">
+      <div className="mt-20 flex max-lg:flex-col items-center justify-center gap-8">
+        <div className="w-96 max-lg:w-full max-lg:mx-auto py-10 px-9 rounded-large bg-secondaryBackground border-light border-card drop-shadow-card  text-foreground">
           <Image
             src={"/icons/language.svg"}
             alt="AutoHelpUS speaks your language"
             width={54}
             height={54}
           />
-          <h2 className="mt-60 font-lora font-bold text-[32px] leading-10">
+          <h2 className="mt-60 max-lg:mt-28 font-lora font-bold text-[32px] leading-10">
             We Speak Your Language
           </h2>
           <p className="mt-6 font-inter font-medium text-lg leading-8">
@@ -33,7 +33,7 @@ const WhyUs = () => {
         </div>
 
         <div
-          className=" relative bg-foreground
+          className="max-lg:w-full relative bg-foreground
         border border-secondary rounded-large drop-shadow-statistics py-11 px-10
         "
         >

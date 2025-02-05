@@ -7,7 +7,7 @@ import CTAButton from "./CTAButton";
 
 const Bonus = () => {
   return (
-    <section className="p-10 border border-mainBlue rounded-large drop-shadow-bonus bg-[#3e3333]">
+    <section className="p-10 max-lg:w-4/5 max-lg:mx-auto border border-mainBlue rounded-large drop-shadow-bonus bg-[#3e3333]">
       <h2 className="text-white font-lora font-semibold text-2xl leading-8">
         🎁 BONUS:
       </h2>

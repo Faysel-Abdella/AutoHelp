@@ -4,16 +4,16 @@ import Step from "@/components/Step";
 
 const HowItWorks = () => {
   return (
-    <section className="py-20  bg-secondaryBackground">
+    <section className=" py-20 px-4  bg-secondaryBackground">
       <div className="flex items-center justify-center">
         <SectionHeader title="How It Works" />
       </div>
 
-      <h2 className="mt-10 text-foreground font-lora text-6xl text-center leading-[64px] font-bold">
+      <h2 className="mt-10 text-foreground font-lora text-6xl max-xl:text-5xl text-center leading-[64px] font-bold">
         Get Your Car in 3 Easy Steps
       </h2>
 
-      <div className="flex items-center justify-center gap-14 mt-20">
+      <div className="flex max-lg:flex-col items-center justify-center gap-14 max-xl:gap-8 max-lg:gap-14 mt-20 max-lg:mt-14">
         <Step
           icon="/icons/consultation.svg"
           alt="Get free consultation about your first car in U.S."

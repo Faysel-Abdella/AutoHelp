@@ -23,14 +23,16 @@ const Step = ({
     <section
       className={cn(
         step === 2
-          ? "w-[330px] px-8 pb-7 border-light border-card drop-shadow-step bg-white/75 rounded-large"
-          : "w-[277px]"
+          ? "w-[330px] max-lg:w-3/4 px-8 pb-7 border-light border-card drop-shadow-step bg-white/75 rounded-large"
+          : "w-[277px] max-lg:w-3/4"
       )}
     >
       <div
         className={cn(
           "flex",
-          step === 2 ? "items-center gap-24" : "items-start gap-40"
+          step === 2
+            ? "items-center max-lg:justify-between gap-24"
+            : "items-start max-lg:justify-between gap-40"
         )}
       >
         <Image src={icon} alt={alt} width={54} height={54} />

@@ -16,7 +16,7 @@ import CTAButton from "@/components/CTAButton";
 
 const Testimonials = () => {
   return (
-    <section className="py-3 pb-14 pt-20 bg-foreground">
+    <section className="py-3 pb-14 pt-20 px-4 bg-foreground">
       <div className="flex items-center justify-center">
         <SectionHeader title="Testimonials" />
       </div>
@@ -26,7 +26,7 @@ const Testimonials = () => {
 
         <div className="relative z-10">
           <div>
-            <h2 className="mt-10 text-white font-lora text-6xl text-center leading-[64px] font-bold">
+            <h2 className="mt-10 text-white font-lora text-6xl max-xl:text-5xl text-center leading-[64px] font-bold">
               Hear From Other Newcomers <br /> Like You
             </h2>
           </div>
@@ -62,7 +62,7 @@ const Testimonials = () => {
 
               <CarouselNext
                 className={
-                  "absolute -right-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
+                  "max-lg:hidden absolute -right-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
                 }
               />
               <CarouselPrevious
@@ -73,9 +73,11 @@ const Testimonials = () => {
             </Carousel>
           </article>
 
-          <h2 className="mt-14 font-lora font-bold text-[40px] text-center text-background">
+          <h2 className="mt-14 font-lora font-bold text-[40px] max-lg:text-4xl text-center text-background">
             You deserve a stress-free car buying experience too. <br />{" "}
-            Let&rsquo;s make it happen!
+            <span className="max-lg:block max-lg:mt-6">
+              Let&rsquo;s make it happen!
+            </span>
           </h2>
 
           <div className="mt-10 flex items-center justify-center">

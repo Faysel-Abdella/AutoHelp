@@ -10,7 +10,7 @@ const Features = () => {
     >
       <div className=" absolute top-0 left-0 h-full w-full bg-[url(/backgrounds/bg-dashed.webp)] bg-center bg-no-repeat bg-cover" />
 
-      <div className="flex items-center justify-center gap-9">
+      <div className="flex max-lg:flex-col items-center justify-center gap-9">
         <aside className="z-10">
           <div className="flex items-center justify-start">
             <SectionHeader title="Features" />
@@ -30,7 +30,7 @@ const Features = () => {
           </div>
         </aside>
 
-        <aside>
+        <aside className="max-lg:mt-10 max-lg:w-full">
           <Bonus />
         </aside>
       </div>
