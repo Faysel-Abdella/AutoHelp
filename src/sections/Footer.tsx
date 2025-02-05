@@ -14,27 +14,6 @@ const Footer = () => {
             <li className="pt-2 px-4 text-base text-center">How it works</li>
             <li className="pt-2 px-4 text-base text-center">Testimonials</li>
           </ul>
-
-          <div className="flex items-center justify-center gap-10">
-            <Image
-              src={"/icons/linkedin.svg"}
-              alt="AutoHelpUSA in Linkedin"
-              width={26}
-              height={26}
-            />
-            <Image
-              src={"/icons/facebook.svg"}
-              alt="AutoHelpUSA in Facebook"
-              width={26}
-              height={26}
-            />
-            <Image
-              src={"/icons/twitter.svg"}
-              alt="AutoHelpUSA in Twitter(X)"
-              width={26}
-              height={26}
-            />
-          </div>
         </div>
 
         <p className="text-center font-inter text-balance font-light text-white/90">
