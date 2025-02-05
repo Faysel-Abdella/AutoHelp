@@ -3,7 +3,7 @@ import SmallNote from "@/components/SmallNote";
 
 const HeroSection = () => {
   return (
-    <section className="pt-12 flex items-center justify-center">
+    <section className="pt-12 px-4 flex items-center justify-center">
       <div>
         <h2 className="w-fit mx-auto font-inter border-light border-mainBlue rounded-3xl py-3 px-5 ">
           <span className="text-base font-medium">Welcome to America</span>

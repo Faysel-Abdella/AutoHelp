@@ -2,7 +2,7 @@ import CTAButton from "@/components/CTAButton";
 
 const CarPreview = () => {
   return (
-    <section className="bg-[url(/backgrounds/car-preview.webp)] bg-center bg-no-repeat bg-cover py-12">
+    <section className="bg-[url(/backgrounds/car-preview.webp)] bg-center bg-no-repeat bg-cover py-12 px-4">
       <h1 className="font-bold font-lora text-5xl text-center text-background leading-[64px]">
         Don&rsquo;t Overpay. Don&rsquo;t Get Scammed. <br /> Don&rsquo;t Stress.
       </h1>
