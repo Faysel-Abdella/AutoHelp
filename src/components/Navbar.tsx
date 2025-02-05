@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowDownRight, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import navMenu from "@/data/nav";
 
 const Navbar = () => {
