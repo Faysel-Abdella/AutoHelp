@@ -15,7 +15,7 @@ import Footer from "@/sections/Footer";
 export default function Home() {
   return (
     <React.Fragment>
-      <section className="relative min-h-screen pb-10">
+      <section className="relative lg:min-h-screen pb-10 max-lg:pb-20">
         <figure className="-z-10 absolute top-0 left-0 w-full h-full">
           <Image
             src={"/backgrounds/hero.svg"}
