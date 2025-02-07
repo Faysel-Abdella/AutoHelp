@@ -11,7 +11,10 @@ import USstates from "@/data/us-states";
 
 const ContactUs = () => {
   return (
-    <section className="relative py-32 px-4 bg-secondaryBackground flex items-center justify-center">
+    <section
+      className="relative py-32 px-4 bg-secondaryBackground flex items-center justify-center"
+      id="contact-us"
+    >
       <main className="relative z-40 flex flex-wrap items-start justify-center gap-10 bg-white rounded-large py-20 px-10">
         <section className="p-8 py-10 max-sm:py-0 max-sm:px-0">
           <h1 className="font-lora font-bold text-4xl max-md:text-2xl text-center leading-[52px] text-foreground">

@@ -16,7 +16,7 @@ import CTAButton from "@/components/CTAButton";
 
 const Testimonials = () => {
   return (
-    <section className="py-3 pb-14 pt-20 px-4 bg-foreground">
+    <section className="py-3 pb-14 pt-20 px-4 bg-foreground" id="testimonial">
       <div className="flex items-center justify-center">
         <SectionHeader title="Testimonials" />
       </div>

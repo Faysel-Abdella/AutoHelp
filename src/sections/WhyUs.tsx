@@ -5,7 +5,7 @@ import CTAButton from "@/components/CTAButton";
 
 const WhyUs = () => {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-background" id="why-us">
       <div className="flex items-center justify-center">
         <SectionHeader title="Why Us?" />
       </div>

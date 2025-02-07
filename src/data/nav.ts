@@ -5,11 +5,11 @@ const navMenu: { label: string; sectionId: string }[] = [
   },
   {
     label: "Why Us",
-    sectionId: "#whyus",
+    sectionId: "#why-us",
   },
   {
     label: "How it Works",
-    sectionId: "#howitworks",
+    sectionId: "#how-it-works",
   },
   {
     label: "Testimonials",

@@ -38,13 +38,21 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <button className="flex items-center justify-center gap-3 pl-4 pr-2 bg-mainBlue rounded-large">
-              <span className="font-medium py-2 text-background">
-                Get Started
-              </span>
-              <div className="bg-background rounded-full scale-125">
-                <ArrowDownRight strokeWidth={1.5} className="text-foreground" />
-              </div>
+            <button>
+              <Link
+                href="#contact-us"
+                className="flex items-center justify-center gap-3 pl-4 pr-2 bg-mainBlue rounded-large"
+              >
+                <span className="font-medium py-2 text-background">
+                  Get Started
+                </span>
+                <div className="bg-background rounded-full scale-125">
+                  <ArrowDownRight
+                    strokeWidth={1.5}
+                    className="text-foreground"
+                  />
+                </div>
+              </Link>
             </button>
           </div>
 

@@ -4,7 +4,10 @@ import SmallService from "@/components/SmallService";
 
 const ServicesSection = () => {
   return (
-    <section className="relative py-20 px-4 bg-secondaryBackground">
+    <section
+      className="relative py-20 px-4 bg-secondaryBackground"
+      id="services"
+    >
       <div className="flex justify-center items-center">
         <SectionHeader title="Services" />
       </div>

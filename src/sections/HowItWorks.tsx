@@ -4,7 +4,7 @@ import Step from "@/components/Step";
 
 const HowItWorks = () => {
   return (
-    <section className=" py-20 px-4  bg-secondaryBackground">
+    <section className=" py-20 px-4  bg-secondaryBackground" id="how-it-works">
       <div className="flex items-center justify-center">
         <SectionHeader title="How It Works" />
       </div>
