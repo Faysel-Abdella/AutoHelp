@@ -15,7 +15,7 @@ const testimonials: {
   {
     id: 2,
     name: "Rafael M.",
-    position: "Software Engineer from Brazil",
+    position: "",
     profilePath: "/images/user-2.jpg",
     text: "“I saved $3,500 and got a much better loan rate than expected! I felt truly supported every step of the way.”",
   },
@@ -28,10 +28,10 @@ const testimonials: {
   },
   {
     id: 4,
-    name: "Rafael M.",
-    position: "Software Engineer from Brazil",
+    name: "Lina Patel.",
+    position: "",
     profilePath: "/images/user-2.jpg",
-    text: "“I saved $3,500 and got a much better loan rate than expected! I felt truly supported every step of the way.”",
+    text: "I had no idea where to start with buying a car in the U.S., but SureDriveUSA made it simple. Their guidance saved me time, stress, and money. Now, I'm driving my dream car, knowing I got the best deal possible, thanks to SureDrive's expert advice. If you're new to the U.S. and need to buy a car, I highly recommend trying SureDrive. They truly make a difference!",
   },
 ];
 
