@@ -19,7 +19,7 @@ const Bonus = () => {
           <li key={id} className="flex items-center gap-3">
             <Image
               src={"/icons/tick-circle.svg"}
-              alt="Bonuses from AutoHelpUSA"
+              alt="Bonuses from SureDriveUSA"
               width={24}
               height={24}
             />
