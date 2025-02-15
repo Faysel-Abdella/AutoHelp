@@ -11,11 +11,10 @@ export default function ExitIntentPopup() {
 
   useEffect(() => {
     const storedCount = parseInt(localStorage.getItem("popupCount") || "0", 10);
-    const formSubmitted = localStorage.getItem("formSubmitted");
     setPopupCount(storedCount);
 
     const handleExitIntent = () => {
-      if (popupCount < 3) {
+      if (popupCount < 4) {
         setIsOpen(true);
         document.body.style.overflow = "hidden"; // Disable scrolling
         localStorage.setItem("popupCount", (popupCount + 1).toString());
