@@ -83,10 +83,6 @@ export async function POST(request: NextRequest) {
               }</p>
               <p><strong>State:</strong> ${state}</p>
             </div>
-            <div class="footer">
-              <p>Thank you for contacting us!</p>
-              <p><a href="https://www.suredrive-usa.com">Visit SureDrive-USA</a></p>
-            </div>
           </div>
         </body>
       </html>

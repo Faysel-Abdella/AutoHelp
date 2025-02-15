@@ -11,11 +11,13 @@ import Testimonials from "@/sections/Testimonials";
 import CarPreview from "@/sections/CarPreview";
 import ContactUs from "@/sections/ContactUs";
 import Footer from "@/sections/Footer";
+import ExitIntentPopup from "@/components/ExitPopup";
 
 export default function Home() {
   return (
     <React.Fragment>
       <section className="relative lg:min-h-screen pb-10 max-lg:pb-20">
+        <ExitIntentPopup />
         <figure className="-z-10 absolute top-0 left-0 w-full h-full">
           <Image
             src={"/backgrounds/hero.svg"}

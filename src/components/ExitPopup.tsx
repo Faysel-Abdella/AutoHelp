@@ -10,13 +10,13 @@ export default function ExitIntentPopup() {
   const [popupCount, setPopupCount] = useState(0);
 
   useEffect(() => {
-    // Get the current popup count from localStorage
     const storedCount = parseInt(localStorage.getItem("popupCount") || "0", 10);
     setPopupCount(storedCount);
 
     const handleExitIntent = () => {
-      if (popupCount < 90) {
+      if (popupCount < 5) {
         setIsOpen(true);
+        document.body.style.overflow = "hidden"; // Disable scrolling
         localStorage.setItem("popupCount", (popupCount + 1).toString());
         setPopupCount((prev) => prev + 1);
       }
@@ -65,16 +65,22 @@ export default function ExitIntentPopup() {
     }
   }, [isOpen, countdown]);
 
-  const handleClose = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
+  const handleClose = () => {
     setIsOpen(false);
+    document.body.style.overflow = ""; // Re-enable scrolling
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[9999]">
-      <div className="bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg shadow-2xl max-w-md w-full overflow-hidden relative">
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[9999]"
+      onClick={handleClose} // Close when clicking outside
+    >
+      <div
+        className="bg-blue-900 rounded-lg shadow-2xl max-w-md w-full overflow-hidden relative"
+        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+      >
         <div className="p-6 text-white">
           <div className="text-center mb-6 animate-bounce">
             <span className="text-6xl">🎉</span>
@@ -83,20 +89,12 @@ export default function ExitIntentPopup() {
             className="text-3xl font-extrabold text-center mb-4 font-sans"
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
           >
-            Wait! Don&apos;t Go Yet!
+            Get your FREE copy NOW!
           </h2>
-          <p className="text-lg text-center mb-6 animate-pulse">
-            You&apos;re about to miss out on an{" "}
-            <span className="font-bold underline">AMAZING</span> offer!
+          <p className="text-lg text-center mb-6 ">
+            10 Steps to Buy a Car in the US.
           </p>
           <ExitIntentForm onSuccess={() => setIsOpen(false)} />
-          <div className="text-center mt-4">
-            <p className="text-sm">Hurry! This offer expires in:</p>
-            <p className="text-2xl font-bold">
-              {Math.floor(countdown / 60)}:{countdown % 60 < 10 ? "0" : ""}
-              {countdown % 60}
-            </p>
-          </div>
         </div>
         <button
           onClick={handleClose}
