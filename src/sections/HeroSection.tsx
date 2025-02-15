@@ -15,9 +15,7 @@ const HeroSection = () => {
 
         <h1 className="z-50 mt-6 font-lora font-semibold text-7xl max-xl:text-5xl max-md:text-4xl text-center leading-[90px]">
           Let&rsquo;s Get You on the Road <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-b from-foreground to-mainGray font-bold ">
-            Stress-Free!
-          </span>
+          <span className=" ont-bold ">Stress-Free!</span>
         </h1>
 
         <h3 className="mt-4 text-foreground text-base max-md:text-sm font-inter font-medium leading-7 text-center ">
