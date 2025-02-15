@@ -31,13 +31,13 @@ const Testimonials = () => {
             </h2>
           </div>
 
-          <article className={"relative mt-24 max-md:mt-20 max-sm:mt-8"}>
+          <article className={"relative mt-24 max-md:mt-20 max-sm:mt-8 mx-4"}>
             <Carousel
               opts={{
                 align: "start",
-                // loop: true,
-
+                loop: true,
                 dragFree: true,
+                containScroll: "trimSnaps",
               }}
               className={" w-full mx-auto max-w-[1200px]"}
             >
@@ -62,12 +62,12 @@ const Testimonials = () => {
 
               <CarouselNext
                 className={
-                  "max-lg:hidden absolute -right-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
+                  "absolute -right-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
                 }
               />
               <CarouselPrevious
                 className={
-                  "max-lg:hidden absolute -left-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
+                  "absolute -left-5  size-10 rounded-full bg-[#4B6BFB] hover:bg-[#4B6BFB]/90 text-white z-10"
                 }
               />
             </Carousel>

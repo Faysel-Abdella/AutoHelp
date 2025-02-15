@@ -22,7 +22,7 @@ const Testimonial = ({
             alt="Testimonial from AutoHelp customers"
             width={50}
             height={50}
-            className="min-h-12 min-w-12 rounded-full object-center object-cover"
+            className="min-h-12 min-w-12 rounded-full object-center object-cover "
           />
         </div>
 

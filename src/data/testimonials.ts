@@ -23,15 +23,15 @@ const testimonials: {
     id: 3,
     name: "Solomon",
     position: "",
-    profilePath: "/images/user-1.jpg",
+    profilePath: "/images/user-3.jpg",
     text: "“Many banks and dealerships rejected me due to my low credit history. I’m happy because they connected me to a good credit union with fair rates. Now I have the car I wanted.”",
   },
   {
     id: 4,
-    name: "Lina Patel.",
+    name: "Lina P.",
     position: "",
-    profilePath: "/images/user-2.jpg",
-    text: "I had no idea where to start with buying a car in the U.S., but SureDriveUSA made it simple. Their guidance saved me time, stress, and money. Now, I'm driving my dream car, knowing I got the best deal possible, thanks to SureDrive's expert advice. If you're new to the U.S. and need to buy a car, I highly recommend trying SureDrive. They truly make a difference!",
+    profilePath: "/images/user-4.jpg",
+    text: "“I had no idea where to start with buying a car in the U.S. SureDriveUSA made it simple. Thanks to their expert advice, I got my dream car at the best price.",
   },
 ];
 
