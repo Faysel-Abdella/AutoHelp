@@ -43,7 +43,7 @@ export default function ExitIntentForm({ onSuccess }: ExitIntentFormProps) {
 
       // Trigger PDF download from public/pdf/file.pdf
       const link = document.createElement("a");
-      link.href = "/pdf/file.pdf"; // URL relative to the public folder
+      link.href = "/pdf/file.pdf";
       link.download = "file.pdf"; // desired filename
       document.body.appendChild(link);
       link.click();
