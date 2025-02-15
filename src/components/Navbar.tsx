@@ -22,7 +22,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <header className="relative z-50 font-inter w-full pt-6">
+    <header className="relative z-50 font-inter w-full pt-6 max-md:pt-1">
       <nav className="container mx-auto px-4 py-3 md:bg-background md:border-[0.5px] border-main md:drop-shadow-main md:rounded-large md:w-fit">
         <div className="flex items-center justify-end md:justify-center">
           <div className="hidden md:flex items-center space-x-4">
