@@ -55,7 +55,8 @@ const ContactUs = () => {
             </p>
           </div>
         </section>
-        <section>
+
+        <section className="w-full">
           {error && (
             <div className="bg-red-100 text-red-700 border border-red-600 rounded-md p-4 mb-5">
               {error}
@@ -86,58 +87,63 @@ const ContactUs = () => {
             })}
           >
             <div className="flex max-md:flex-col justify-center items-center gap-12 max-[890px]:gap-[24px]">
-              <div className="flex flex-col items-center justify-center gap-2">
+              <div className="relative flex flex-col items-center justify-center gap-2 max-md:w-full">
                 <input
                   placeholder="First Name*"
                   {...register("firstName")}
                   className="placeholder:font-inter rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg placeholder:text-base"
                 />
                 {errors.firstName && (
-                  <p className="text-red-600 text-sm">
+                  <p className="absolute left-3 -bottom-5 text-red-600 text-sm">
                     {errors.firstName.message}
                   </p>
                 )}
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-2">
+              <div className="relative flex flex-col items-center justify-center gap-2 max-md:w-full">
                 <input
                   placeholder="Last Name*"
                   className="placeholder:font-inter rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg placeholder:text-base"
                   {...register("lastName")}
                 />
                 {errors.lastName && (
-                  <p className="text-red-600 text-sm">
+                  <p className="absolute left-3 -bottom-5 text-red-600 text-sm">
                     {errors.lastName.message}
                   </p>
                 )}
               </div>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-12 max-[890px]:gap-[24px]">
-              <div className="flex flex-col items-center justify-center gap-2">
+
+            <div className="flex max-md:flex-col items-center justify-center gap-12 max-[890px]:gap-[24px]">
+              <div className="relative max-md:w-full flex flex-col items-center justify-center gap-2">
                 <input
                   placeholder="Email*"
                   className="placeholder:font-inter rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg placeholder:text-base"
                   {...register("email")}
                 />
                 {errors.email && (
-                  <p className="text-red-600 text-sm">{errors.email.message}</p>
+                  <p className="absolute left-3 -bottom-5 text-red-600 text-sm">
+                    {errors.email.message}
+                  </p>
                 )}
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-2">
+              <div className="relative max-md:w-full flex flex-col items-center justify-center gap-2">
                 <input
                   placeholder="Phone (optional)"
                   {...register("phone")}
                   className="placeholder:font-inter rounded-md py-4 px-6 outline-none bg-input max-md:w-full text-lg placeholder:text-base"
                 />
                 {errors.phone && (
-                  <p className="text-red-600 text-sm">{errors.phone.message}</p>
+                  <p className="absolute left-3 -bottom-6 text-red-600 text-sm">
+                    {errors.phone.message}
+                  </p>
                 )}
               </div>
             </div>
 
             <div className="flex max-md:flex-col justify-center items-center gap-12 max-[890px]:gap-[24px]">
-              <div className="flex flex-col items-center justify-center gap-2">
+              <div className="flex flex-col items-center justify-center gap-2 max-md:w-full">
                 <input
                   placeholder="Preferred language (optional)"
                   {...register("preferredLanguage")}
@@ -150,13 +156,17 @@ const ContactUs = () => {
                 )}
               </div>
 
-              <div className="flex w-full flex-col items-center justify-center gap-2">
+              <div className="relative flex flex-col items-center justify-center gap-2 max-md:w-full">
                 <Controller
                   name="state"
                   control={control}
                   render={({ field }) => (
-                    <Select onValueChange={field.onChange} value={field.value}>
-                      <SelectTrigger className="rounded-md py-7 px-6 outline-none bg-input max-md:w-full text-lg">
+                    <Select
+                      onValueChange={field.onChange}
+                      value={field.value}
+                      {...register("state")}
+                    >
+                      <SelectTrigger className="rounded-md py-7 px-6 outline-none bg-input md:w-[278px] max-md:w-full text-lg">
                         <SelectValue placeholder="State*" />
                       </SelectTrigger>
                       <SelectContent className="bg-white">
@@ -174,7 +184,9 @@ const ContactUs = () => {
                   )}
                 />
                 {errors.state && (
-                  <p className="text-red-600 text-sm">{errors.state.message}</p>
+                  <p className="absolute left-3 -bottom-6 text-red-600 text-sm">
+                    {errors.state.message}
+                  </p>
                 )}
               </div>
             </div>

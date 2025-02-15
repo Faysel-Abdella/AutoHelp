@@ -94,7 +94,7 @@ export async function POST(request: NextRequest) {
     };
 
     // 4. Send the email
-    const info = await transporter.sendMail(emailOptions);
+    await transporter.sendMail(emailOptions);
 
     // 5. Return a success response
     return NextResponse.json(
