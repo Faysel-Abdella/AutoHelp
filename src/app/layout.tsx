@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "First Car in the U.S. for Newcomers | Stress-Free Car Buying",
     type: "website",
     locale: "en_US",
-    // url: "" Add the url of the website after hosting
+    url: "www.suredriveusa.com",
     siteName: "SureDriveUSA",
   },
 };
