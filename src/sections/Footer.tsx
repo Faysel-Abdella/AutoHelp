@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="pt-7 pb-16  px-4 w-full  bg-secondaryBackground flex items-center justify-center">
@@ -8,16 +10,16 @@ const Footer = () => {
           </p>
           <ul className="flex flex-wrap items-center justify-center gap-2 font-inter text-background">
             <li className="pt-2 px-4 text-base max-lg:text-sm text-nowrap text-center">
-              Services
+              <Link href="#services">Services</Link>
             </li>
             <li className="pt-2 px-4 text-base max-lg:text-sm text-nowrap text-center">
-              Why Us
+              <Link href="#why-us">Why Us</Link>
             </li>
             <li className="pt-2 px-4 text-base max-lg:text-sm text-nowrap text-center">
-              How it works
+              <Link href="#how-it-works">How it works</Link>
             </li>
             <li className="pt-2 px-4 text-base max-lg:text-sm text-nowrap text-center">
-              Testimonials
+              <Link href="#testimonial">Testimonials</Link>
             </li>
           </ul>
         </div>
