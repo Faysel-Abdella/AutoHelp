@@ -8,9 +8,6 @@ export default function ExitIntentPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const [countdown, setCountdown] = useState(300); // 5 minutes in seconds
   const [popupCount, setPopupCount] = useState(0);
-  const [isPDFDownloaded, setIsPDFDownloaded] = useState(
-    localStorage.getItem("isDownloaded") === "true"
-  );
 
   useEffect(() => {
     const storedCount = parseInt(localStorage.getItem("popupCount") || "0", 10);
