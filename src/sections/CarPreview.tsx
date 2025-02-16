@@ -8,8 +8,9 @@ const CarPreview = () => {
       </h1>
 
       <p className="mt-5 font-inter font-medium italic text-lg leading-7 text-center text-background ">
-        Your American journey starts with the right <br />{" "}
-        <span className="font-bold">car</span>—let&rsquo;s get it done right.
+        Your American journey starts with <br className="md:hidden" /> the right
+        <br /> <span className="font-bold">car</span>—let&rsquo;s get it done
+        right.
       </p>
 
       <p className="mt-[460px] text-foreground font-lora font-bold text-3xl max-md:text-xl text-center leading-10">

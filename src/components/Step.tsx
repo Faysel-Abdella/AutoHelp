@@ -23,8 +23,8 @@ const Step = ({
     <section
       className={cn(
         step === 2
-          ? "w-[330px] max-lg:w-3/4 px-8 pb-7 border-light border-card drop-shadow-step bg-white/75 rounded-large"
-          : "w-[277px] max-lg:w-3/4"
+          ? "w-[330px] max-lg:w-[95%] px-8 pb-7 border-light border-card drop-shadow-step bg-white/75 rounded-large"
+          : "w-[350px] max-lg:w-[95%] bg-slate-300 p-10 rounded-large border-2 border-blue-800"
       )}
     >
       <div
@@ -36,15 +36,6 @@ const Step = ({
         )}
       >
         <Image src={icon} alt={alt} width={54} height={54} />
-        {/* <p
-          className={cn(
-            "text-transparent bg-clip-text bg-gradient-to-b from-foreground to-mainGray font-extrabold",
-            step === 2 ? "text-9xl" : "text-5xl"
-          )}
-        >
-          {step}
-        </p> */}
-
         {stepImage}
       </div>
 

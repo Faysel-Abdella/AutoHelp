@@ -36,7 +36,7 @@ const ContactUs = () => {
 
   return (
     <section
-      className="relative py-32 px-4 bg-secondaryBackground flex items-center justify-center"
+      className="relative py-32 max-sm:pt-14 px-4 bg-secondaryBackground flex items-center justify-center"
       id="contact-us"
     >
       <main className="relative z-40 flex flex-wrap items-start justify-center gap-10 bg-white rounded-large py-20 px-10">

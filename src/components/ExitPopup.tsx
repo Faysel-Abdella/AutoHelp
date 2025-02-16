@@ -10,6 +10,10 @@ export default function ExitIntentPopup() {
   const [popupCount, setPopupCount] = useState(0);
 
   useEffect(() => {
+    setPopupCount(0);
+  }, []);
+
+  useEffect(() => {
     const storedCount = parseInt(localStorage.getItem("popupCount") || "0", 10);
     setPopupCount(storedCount);
 
