@@ -17,9 +17,13 @@ type PopupContactFormData = z.infer<typeof PopupContactSchema>;
 
 interface ExitIntentFormProps {
   onSuccess: () => void;
+  handleClose: () => void;
 }
 
-export default function ExitIntentForm({ onSuccess }: ExitIntentFormProps) {
+export default function ExitIntentForm({
+  onSuccess,
+  handleClose,
+}: ExitIntentFormProps) {
   const {
     register,
     handleSubmit,
@@ -54,9 +58,11 @@ export default function ExitIntentForm({ onSuccess }: ExitIntentFormProps) {
       reset();
       onSuccess();
       setTimeout(() => setSuccess(false), 2000);
+      handleClose();
+      localStorage.setItem("isDownloaded", "true");
     } catch (err) {
       console.error(err);
-      setError("An unexpected error occurred. Please try again.");
+      setError("An unexpected error. Please try again.");
     } finally {
       setIsSubmitting(false);
     }

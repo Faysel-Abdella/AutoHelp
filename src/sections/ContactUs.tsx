@@ -80,7 +80,7 @@ const ContactUs = () => {
                 setTimeout(() => setSuccess(false), 2000);
               } catch (error) {
                 console.error(error);
-                setError("An unexpected error occurred. Please try again.");
+                setError("An unexpected error. Please try again.");
               } finally {
                 setIsSubmitting(false);
               }
