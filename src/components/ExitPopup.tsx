@@ -11,6 +11,7 @@ export default function ExitIntentPopup() {
 
   useEffect(() => {
     setPopupCount(0);
+    localStorage.setItem("popupCount", "0");
   }, []);
 
   useEffect(() => {
