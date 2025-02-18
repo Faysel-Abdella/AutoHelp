@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "car buying help for immigrants",
     "buy a car in the U.S. with no credit",
     "SureDriveUSA",
+    "Sure drive USA",
     "Newcomer auto",
     "car in U.S.",
   ],
